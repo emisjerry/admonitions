@@ -8,24 +8,24 @@ SetWorkingDir %A_ScriptDir%
 SetBatchLines -1
 
 global k_ID := 0
-
+global imagesFolder := A_WorkingDir . "\admonitions\"
 
 !q::
 WinGet, k_ID, ID, A
 Gui Font, s12, Segoe UI
 Gui Add, Text, x16 y24 w70 h23 +0x200, 類型：
-Gui Add, Picture, gAdNote x88 y4 w151 h76, %A_ScriptDir%\ad-note.png
-Gui Add, Picture, gAdAbstract x240 y0 w176 h81, %A_ScriptDir%\ad-abstract.png
-Gui Add, Picture, gAdInfo x416 y0 w149 h82, %A_ScriptDir%\ad-info.png
-Gui Add, Picture, gAdTip x88 y88 w150 h78, %A_ScriptDir%\ad-tip.png
-Gui Add, Picture, gAdSuccess x240 y88 w174 h77, %A_ScriptDir%\ad-success.png
-Gui Add, Picture, gAdQuestion x419 y86 w151 h75, %A_ScriptDir%\ad-question.png
-Gui Add, Picture, gAdFailure x240 y168 w172 h75, %A_ScriptDir%\ad-failure.png
-Gui Add, Picture, gAdDanger x421 y169 w144 h73, %A_ScriptDir%\ad-danger.png
-Gui Add, Picture, gAdBug x88 y248 w143 h76, %A_ScriptDir%\ad-bug.png
-Gui Add, Picture, gAdExample x240 y248 w175 h76, %A_ScriptDir%\ad-example.png
-Gui Add, Picture, gAdQuote x419 y248 w147 h74, %A_ScriptDir%\ad-quote.png
-Gui Add, Picture, gAdWarning x88 y168 w150 h76, %A_ScriptDir%\ad-warning.png
+Gui Add, Picture, gAdNote x88 y4 w151 h76, %imagesFolder%\ad-note.png
+Gui Add, Picture, gAdAbstract x240 y0 w176 h81, %imagesFolder%\ad-abstract.png
+Gui Add, Picture, gAdInfo x416 y0 w149 h82, %imagesFolder%\ad-info.png
+Gui Add, Picture, gAdTip x88 y88 w150 h78, %imagesFolder%\ad-tip.png
+Gui Add, Picture, gAdSuccess x240 y88 w174 h77, %imagesFolder%\ad-success.png
+Gui Add, Picture, gAdQuestion x419 y86 w151 h75, %imagesFolder%\ad-question.png
+Gui Add, Picture, gAdFailure x240 y168 w172 h75, %imagesFolder%\ad-failure.png
+Gui Add, Picture, gAdDanger x421 y169 w144 h73, %imagesFolder%\ad-danger.png
+Gui Add, Picture, gAdBug x88 y248 w143 h76, %imagesFolder%\ad-bug.png
+Gui Add, Picture, gAdExample x240 y248 w175 h76, %imagesFolder%\ad-example.png
+Gui Add, Picture, gAdQuote x419 y248 w147 h74, %imagesFolder%\ad-quote.png
+Gui Add, Picture, gAdWarning x88 y168 w150 h76, %imagesFolder%\ad-warning.png
 
 Gui Show, x782 y143 w594 h341, Admonition 提醒區塊
 
