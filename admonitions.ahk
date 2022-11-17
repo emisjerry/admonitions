@@ -11,7 +11,7 @@ SetBatchLines -1
 global k_ID := 0
 global imagesFolder := A_WorkingDir . "\admonitions\"
 
-!q::
+
 WinGet, k_ID, ID, A
 Gui Font, s12, Segoe UI
 Gui Add, Text, x16 y24 w70 h23 +0x200, 類型：
@@ -41,8 +41,6 @@ admonition(type, title) {
 (
 ``````ad-%type%
 title: %title%
-collapse: open
-content: 
 ```````n
 ) 
   len := StrLen(title)
